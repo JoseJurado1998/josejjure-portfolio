@@ -1,10 +1,11 @@
 /** Components */
-import CustomNavbar from './components/navbar/Navbar'
-import { Hero } from './components/hero/Hero'
+import CustomNavbar from './components/Navbar'
+import { Hero } from './components/Hero'
 
 /** FONT AWESOME ICONS */
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
+import Skills from './components/Skills'
 library.add(fas)
 
 
@@ -13,10 +14,9 @@ function App() {
 
   return (
     <>
-
-      <CustomNavbar></CustomNavbar>
-      <Hero></Hero>
-      <p>a</p>
+      <CustomNavbar />
+      <Hero />
+      <Skills></Skills>
       <p>a</p>
       <p>a</p>
       <p>b</p>

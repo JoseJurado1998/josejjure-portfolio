@@ -67,7 +67,7 @@
   background-image: url('./assets/background.png');
   background-size: cover;
   background-position: center;
-  opacity: 0.5; /* Set the opacity here */
+  opacity: 0.5;
 }
 
 nav {
@@ -80,7 +80,7 @@ nav {
   display: block;
   width: 0;
   height: 3px;
-  background: #292929;
+  background: rgb(164 202 254 / var(--tw-text-opacity));
   margin: auto;
   transition: 0.5s;
 }
