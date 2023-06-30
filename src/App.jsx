@@ -6,6 +6,9 @@ import { Hero } from './components/Hero'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import Skills from './components/Skills'
+import AboutMe from './components/AboutMe'
+import Contact from './components/Contact'
+import Projects from './components/Projects'
 library.add(fas)
 
 
@@ -16,13 +19,10 @@ function App() {
     <>
       <CustomNavbar />
       <Hero />
-      <Skills></Skills>
-      <p>a</p>
-      <p>a</p>
-      <p>b</p>
-      <p>b</p>
-      <p>b</p>
-
+      <Skills/>
+      <AboutMe/>
+      <Projects/>
+      <Contact/>
     </>
   )
 }

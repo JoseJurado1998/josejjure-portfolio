@@ -34,7 +34,7 @@ export const CustomNavbar = () => {
 
             <nav
                 className={`navbar fixed top-0 w-full z-50 transition-opacity duration-300 
-                 ${isScrolled ? 'bg-opacity-0' : 'bg-gray-600 bg-opacity-30'
+                 ${isScrolled ? 'bg-gray-600 bg-opacity-10 backdrop-filter backdrop-blur' : 'bg-opacity-0 '
                 }`}>
 
 
@@ -55,19 +55,19 @@ export const CustomNavbar = () => {
                     <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
                         <ul class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
                             <li>
-                                <a href="#" class="nav-links text-[21px] font-medium text-gray-100 rounded hover:text-blue-300">
+                                <a href="#skills" class="nav-links text-[21px] font-medium text-gray-100 rounded hover:text-blue-300">
                                     Habilidades</a>
                             </li>
                             <li>
-                                <a href="#" class="nav-links text-[21px] font-medium text-gray-100 rounded hover:text-blue-300 ">
+                                <a href="#aboutme" class="nav-links text-[21px] font-medium text-gray-100 rounded hover:text-blue-300 ">
                                     Sobre mí</a>
                             </li>
                             <li>
-                                <a href="#" class="nav-links text-[21px] font-medium text-gray-100 rounded hover:text-blue-300">
+                                <a href="#projects" class="nav-links text-[21px] font-medium text-gray-100 rounded hover:text-blue-300">
                                     Proyectos</a>
                             </li>
                             <li>
-                                <a href="#" class="nav-links text-[21px] font-medium text-gray-100 rounded hover:text-blue-300 ">
+                                <a href="#contact" class="nav-links text-[21px] font-medium text-gray-100 rounded hover:text-blue-300 ">
                                     Contacto</a>
                             </li>
                         </ul>
