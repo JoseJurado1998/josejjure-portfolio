@@ -38,7 +38,6 @@ export const Hero = () => {
         <div
           className="absolute bottom-5 sm:bottom-8 w-full 
           flex justify-center items-center">
-          <a href="#habilidades">
             <div
               className="w-[35px] h-[64px] rounded-3xl border-4 
             border-french border-dim flex
@@ -55,7 +54,6 @@ export const Hero = () => {
                 className="w-3 h-3 rounded-full bg-gray-100 mb-1"
               />
             </div>
-          </a>
         </div>
       </div>
   )

@@ -1,15 +1,11 @@
-/** Components */
-import CustomNavbar from './components/Navbar'
-import { Hero } from './components/Hero'
-
 /** FONT AWESOME ICONS */
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
-import Skills from './components/Skills'
-import AboutMe from './components/AboutMe'
-import Contact from './components/Contact'
-import Projects from './components/Projects'
+import { Route, Routes } from 'react-router-dom'
 library.add(fas)
+//
+import Home from './pages/Home'
+import Projects from './pages/Projects'
 
 
 
@@ -17,12 +13,13 @@ function App() {
 
   return (
     <>
-      <CustomNavbar />
-      <Hero />
-      <Skills/>
-      <AboutMe/>
-      <Projects/>
-      <Contact/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/projects' element={<Projects/>}/>
+        <Route path="/projects/*" element={<Projects />} />
+        <Route path="*" component={<div>Pagina no encontrada</div>} />
+      </Routes>
+
     </>
   )
 }

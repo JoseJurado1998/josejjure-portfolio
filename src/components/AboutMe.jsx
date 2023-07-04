@@ -22,7 +22,7 @@ const AboutMe = () => {
 
                             <motion.div variants={fadeIn('', '', 0.1, 1)}>
                                 <div class="lg:mx-0 mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">
-                                    <p>Técnico Superior en Desarollo de Aplicaciones Web</p>
+                                    <p>Técnico Superior en Desarrollo de Aplicaciones Web</p>
                                     <p className='text-gray-400 text-sm'>Lucena(Córdoba) 2021-2023</p>
                                     <p>Licenciado en Bellas Artes(Mención en Animación e Ilustración)</p>
                                     <p className='text-gray-400 text-sm'>Universidad de Granada 2016-2020</p>
@@ -30,7 +30,7 @@ const AboutMe = () => {
                                         Poseo varias pasiones que nutren mi creatividad y enriquecen mi trabajo.
                                     </p>
                                     <p>Disfruto de tocar la guitarra y la batería, así como de sumergirme en la literatura fantástica.</p>
-                                    <p className='mt-2'>Practico calistenia y slackline para mantenerme en forma y alimentar mi disciplina y en mi tiempo libre disfruto del dibujo digital, el arte tradicional y la fotografía.</p>
+                                    <p className='mt-2'>Practico calistenia y slackline para mantenerme en forma y alimentar mi disciplina, y en mi tiempo libre disfruto del dibujo digital, el arte tradicional y la fotografía.</p>
                                 </div>
 
                                 <p class="mt-6 text-sm lg:text-xl text-gray-500 md:mt-8">
