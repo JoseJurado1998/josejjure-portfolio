@@ -13,7 +13,7 @@ const Skills = () => {
     return (
 
         <div className="my-8 max-w-6xl mx-auto">
-            <motion.div variants={textVariant()} className='text-center sm:text-start'>
+            <motion.div variants={textVariant()} className='text-center sm:text-start px-4'>
                 <p className='sm:text-[18px] text-[16px] text-gray-200 uppercase tracking-wider font-semibold font-poppins'>Acerca de</p>
                 <Link to={"/projects/jeizy"}><h2 id='projects' className='text-eerieBlack font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins hover:text-sky-400'>Mis proyectos</h2></Link>
             </motion.div>
@@ -25,11 +25,11 @@ const Skills = () => {
                     <div class="relative">
                         <div class="overlay">
                             <img class="w-full" src={project1} alt="Sunset in the mountains" />
-                            <a href='/'>
+                            <Link to='/projects/jeizy'>
                                 <div class="text-overlay cursor-pointer">
                                     <span classNames="font-bold text-xl z-50 mb-4">Ir al sitio web</span>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                         <div class="flex flex-row absolute bottom-0 right-0 transform text-center mb-4 gap-2 mr-2">
                             <div class="h-10 w-10 rounded-full overflow-hidden bg-sky-700 bg-opacity-90">
@@ -55,8 +55,6 @@ const Skills = () => {
                         </Link>
                     </div>
                 </div>
-
-
             </motion.div>
 
         </div>

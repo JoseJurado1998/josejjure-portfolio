@@ -27,7 +27,7 @@ const SkillCard = ({ index, title, icon }) => {
 
 const Skills = () => {
     return (
-        <div className="my-8 max-w-6xl mx-auto text-start">
+        <div className="my-8 max-w-6xl mx-auto text-start px-4">
             <motion.div variants={textVariant()} className='text-center sm:text-start'>
                 <p className='sm:text-[18px] text-[16px] text-gray-200 uppercase tracking-wider font-semibold font-poppins'>Acerca de</p>
                 <h2 id='skills' className='text-eerieBlack font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins'>Habilidades</h2>
@@ -36,7 +36,7 @@ const Skills = () => {
             <motion.div
                 variants={fadeIn('', '', 0.1, 1)}
                 className="mt-4 text-gray-200 text-[18px] max-w-3xl leading-[30px]">
-                <ul className='grid gap-y-4 sm:gap-y-1 px-4 sm:px-2'>
+                <ul className='grid gap-y-4 sm:gap-y-1 px-4 lg:px-2'>
                     <li>Competencia principal en el desarrollo web con <span className='font-bold'>React.js</span> y <span className='font-bold'>Django Rest Framework.</span></li>
                     <li>Creatividad y punto de vista Artístico en mis proyectos.</li>
                     <li>Interés por el aprendizaje de diseño <span className='font-bold'>UX/UI</span>.</li>

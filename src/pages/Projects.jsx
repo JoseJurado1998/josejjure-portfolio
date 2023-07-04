@@ -1,12 +1,22 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { Link, Routes, Route } from 'react-router-dom'
 import Jeizy from './Jeizy'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
+
+function ScrollToTop() {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  
+    return null;
+  }
+
 const Projects = () => {
     return (
         <>
+            <ScrollToTop/>
             <div className='bg-gray-50 text-gray-700'>
                 <span className='w-full flex flex-row justify-start pt-2 pl-4 items-center'>
                     <FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon>

@@ -13,7 +13,7 @@ const AboutMe = () => {
                     <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-20">
 
                         {/** About me text */}
-                        <div className='flex flex-col justify-center text-center lg:text-left pt-10 lg:pt-0'>
+                        <div className='flex flex-col justify-center text-center lg:text-left pt-10 lg:py-4'>
                             <motion.div variants={textVariant()}>
                                 <h2 id='aboutme' class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">
                                     Sobre mí
