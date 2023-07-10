@@ -1,5 +1,24 @@
 import React from 'react'
+//Jeizy
 import banner1 from '../assets/jeizy/banner1.jpg'
+import hero from '../assets/jeizy/hero.png'
+import users from '../assets/jeizy/users.png'
+import productos from '../assets/jeizy/productos.png'
+import administrador from '../assets/jeizy/administrador.png'
+import contacto from '../assets/jeizy/contacto.png'
+//ScreenShots
+import imagen1 from '../assets/jeizy/screenshots/1.png'
+import imagen2 from '../assets/jeizy/screenshots/2.png'
+import imagen3 from '../assets/jeizy/screenshots/3.png'
+import imagen4 from '../assets/jeizy/screenshots/4.png'
+import imagen5 from '../assets/jeizy/screenshots/5.png'
+import imagen6 from '../assets/jeizy/screenshots/6.png'
+import imagen7 from '../assets/jeizy/screenshots/7.png'
+import imagen8 from '../assets/jeizy/screenshots/8.png'
+import imagen9 from '../assets/jeizy/screenshots/9.png'
+import imagen10 from '../assets/jeizy/screenshots/10.png'
+
+//Icons
 import { Button } from 'flowbite-react';
 import react from '../assets/icons/react.png'
 import django from '../assets/icons/django.png'
@@ -18,7 +37,6 @@ const Jeizy = () => {
           }}>
           <div className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
-              // backgroundImage: "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')"
               backgroundImage: `url('${banner1}')`
             }}>
             <span className="w-full h-full absolute opacity-50 bg-sky-950"></span>
@@ -34,10 +52,11 @@ const Jeizy = () => {
                   <p className="mt-4 text-lg text-fuchsia-100">
                     Proyecto de tienda de productos de peluquería online.
                   </p>
-                  <div className='w-full flex justify-center mt-3'>
-                    <a href='https://jeizy.netlify.app/'>
+                  <div className='w-full flex flex-col mx-auto justify-center mt-3'>
+                    <a href='https://jeizy.netlify.app/' className='mx-auto'>
                       <Button className='bg-sky-500 hover:bg-sky-700'>Ir a la demo</Button>
                     </a>
+                    <span className='text-red-500 mt-2'>Servidor Django/Mysql Inactivo</span>
                   </div>
                 </div>
               </div>
@@ -85,7 +104,7 @@ const Jeizy = () => {
                       <img class="h-full w-full object-cover p-1" src={mysql} alt="Image" />
                     </div>
 
-                    <h6 className="text-xl font-semibold">Django && MySQL</h6>
+                    <h6 className="text-xl font-semibold">Django / MySQL</h6>
                     <ul className="text-gray-600 mt-4 text-left mx-auto">
                       <li>-Uso de DRF para API REST</li>
                       <li>-Uso de Django ORM</li>
@@ -218,7 +237,8 @@ const Jeizy = () => {
           </div>
         </section>
 
-        {/* <section className="relative py-20">
+        {/** ScreenS */}
+        <section className="relative py-20">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
             style={{ height: "80px" }}
@@ -241,25 +261,23 @@ const Jeizy = () => {
 
           <div className="container mx-auto px-4">
             <div className="items-center flex flex-wrap">
-              <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
+              <div className="w-full md:w-5/12 ml-auto">
                 <img
                   alt="..."
-                  className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+                  className="max-w-full shadow-lg"
+                  src={hero}
                 />
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
                 <div className="md:pr-12">
-                  <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+                  {/* <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
                     <i className="fas fa-rocket text-xl"></i>
-                  </div>
+                  </div> */}
                   <h3 className="text-3xl font-semibold">
-                    A growing company
+                    Cuidado en el Detalle
                   </h3>
                   <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                    The extension comes with three pre-built pages to help you
-                    get started faster. You can change the text and images and
-                    you're good to go.
+                    Interés en la jerarquía visual y el color
                   </p>
                   <ul className="list-none mt-6">
                     <li className="py-2">
@@ -271,8 +289,8 @@ const Jeizy = () => {
                         </div>
                         <div>
                           <h4 className="text-gray-600">
-                            Carefully crafted components
-                          </h4>aaw
+                            Responsiva
+                          </h4>
                         </div>
                       </div>
                     </li>
@@ -284,7 +302,7 @@ const Jeizy = () => {
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-gray-600">Amazing page examples</h4>
+                          <h4 className="text-gray-600">Intuitiva</h4>
                         </div>
                       </div>
                     </li>
@@ -296,7 +314,7 @@ const Jeizy = () => {
                           </span>
                         </div>
                         <div>
-                          <h4 className="text-gray-600">Dynamic components</h4>
+                          <h4 className="text-gray-600">Funcional</h4>
                         </div>
                       </div>
                     </li>
@@ -307,49 +325,122 @@ const Jeizy = () => {
           </div>
         </section>
 
-        <section className="pt-20 pb-48">
+        <section className="pt-16 pb-48">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-4xl font-semibold">
-                  Here are our heroes
+                  4 Funcionalidades Principales
                 </h2>
                 <p className="text-lg leading-relaxed m-4 text-gray-600">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record maximum.
+                  Con el ojo en el buen funcionamiento del backend, y claridad y anticipación en el control de errores.
                 </p>
               </div>
             </div>
+
             <div className="flex flex-wrap">
+
               <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
                 <div className="px-6">
                   <img
                     alt="..."
-                    src="https://picsum.photos/800/800"
-                    className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
+                    src={users}
+                    className="shadow-lg max-w-full mx-auto"
+                    style={{ maxWidth: "240px" }}
                   />
                   <div className="pt-6 text-center">
                     <h5 className="text-xl font-bold">
-                      Ryan Tompson
+                      Usuarios
                     </h5>
                     <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Web Developer
+                      Perfil / Pedidos
                     </p>
                     <div className="mt-6">
                       <button
                         className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
-                        <i className="fab fa-twitter"></i>
+                        <i className="fab fa-dribbble"></i>
                       </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                <div className="px-6">
+                  <img
+                    alt="..."
+                    src={productos}
+                    className="shadow-lg max-w-full mx-auto"
+                    style={{ maxWidth: "240px" }}
+                  />
+                  <div className="pt-6 text-center">
+                    <h5 className="text-xl font-bold">
+                      Productos
+                    </h5>
+                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                      Proceso de compra
+                    </p>
+                    <div className="mt-6">
+
                       <button
                         className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
                       >
                         <i className="fab fa-facebook-f"></i>
                       </button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                <div className="px-6">
+                  <img
+                    alt="..."
+                    src={administrador}
+                    className="shadow-lg max-w-full mx-auto"
+                    style={{ maxWidth: "240px" }}
+                  />
+                  <div className="pt-6 text-center">
+                    <h5 className="text-xl font-bold">
+                      Pedidos
+                    </h5>
+                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                      Gestión Administrador
+                    </p>
+                    <div className="mt-6">
+
+                      <button
+                        className="bg-pink-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                        type="button"
+                      >
+                        <i className="fab fa-dribbble"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                <div className="px-6">
+                  <img
+                    alt="..."
+                    src={contacto}
+                    className="shadow-lg max-w-full mx-auto"
+                    style={{ maxWidth: "240px" }}
+                  />
+                  <div className="pt-6 text-center">
+                    <h5 className="text-xl font-bold">
+                      Contacto
+                    </h5>
+                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                      Gestión Mensajes
+                    </p>
+                    <div className="mt-6">
+
                       <button
                         className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"
@@ -360,120 +451,9 @@ const Jeizy = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                  <img
-                    alt="..."
-                    src="https://picsum.photos/800/800"
-                    className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
-                  />
-                  <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">
-                      Romina Hadid
-                    </h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Marketing Specialist
-                    </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-facebook-f"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                  <img
-                    alt="..."
-                    src="https://picsum.photos/800/800"
-                    className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
-                  />
-                  <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">
-                      Alexa Smith
-                    </h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      UI/UX Designer
-                    </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                  <img
-                    alt="..."
-                    src="https://picsum.photos/800/800"
-                    className="shadow-lg rounded-full max-w-full mx-auto"
-                    style={{ maxWidth: "120px" }}
-                  />
-                  <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">
-                      Jenna Kardi
-                    </h5>
-                    <p className="mt-1 text-sm text-gray-500 uppercase font-semibold">
-                      Founder and CEO
-                    </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </button>
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-gray-800 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+
+
             </div>
           </div>
         </section>
@@ -499,41 +479,27 @@ const Jeizy = () => {
             </svg>
           </div>
 
-          <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
+          <div className="container mx-auto px-4 lg:pt-24 lg:pb-10">
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-4xl font-semibold text-white">
-                  Build something
+                  Otras Funcionalidades
                 </h2>
                 <p className="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-                  Put the potentially record low maximum sea ice extent tihs year down to low ice.
-                  According to the National Oceanic and Atmospheric Administration, Ted, Scambos.
+                  Interés y aprendizaje por React y Django
                 </p>
               </div>
             </div>
-            <div className="flex flex-wrap mt-12 justify-center">
-              <div className="w-full lg:w-3/12 px-4 text-center">
-                <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
-                  <i className="fas fa-medal text-xl"></i>
-                </div>
-                <h6 className="text-xl mt-5 font-semibold text-white">
-                  Excelent Services
-                </h6>
-                <p className="mt-2 mb-4 text-gray-500">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
+            <div className="flex flex-wrap mt-2 justify-center">
               <div className="w-full lg:w-3/12 px-4 text-center">
                 <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
                   <i className="fas fa-poll text-xl"></i>
                 </div>
                 <h5 className="text-xl mt-5 font-semibold text-white">
-                  Grow your market
+                  Login
                 </h5>
                 <p className="mt-2 mb-4 text-gray-500">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Django Simple JWT Auth
                 </p>
               </div>
               <div className="w-full lg:w-3/12 px-4 text-center">
@@ -541,16 +507,43 @@ const Jeizy = () => {
                   <i className="fas fa-lightbulb text-xl"></i>
                 </div>
                 <h5 className="text-xl mt-5 font-semibold text-white">
-                  Launch time
+                  Registro
                 </h5>
                 <p className="mt-2 mb-4 text-gray-500">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Peticiones HTTP / Redirección
                 </p>
               </div>
+              <div className="w-full lg:w-3/12 px-4 text-center">
+                <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+                  <i className="fas fa-lightbulb text-xl"></i>
+                </div>
+                <h5 className="text-xl mt-5 font-semibold text-white">
+                  Cesta
+                </h5>
+                <p className="mt-2 mb-4 text-gray-500">
+                  Variables en Local Storage
+                </p>
+              </div>
+
+
             </div>
           </div>
-        </section> */}
+
+          <div className='mx-auto flex flex-row justify-center px-10 gap-4'>
+            <div className="px-4">
+              <img src={imagen2} className="text-xl h-72 mt-5 font-semibold text-white">
+              </img>
+            </div>
+            <div className="px-4">
+              <img src={imagen3} className="text-xl mt-5 h-72 font-semibold text-white">
+              </img>
+            </div>
+            <div className="px-4">
+              <img src={imagen4} className="text-xl mt-5 h-72 font-semibold text-white">
+              </img>
+            </div>
+          </div>
+        </section>
 
       </main>
     </>
