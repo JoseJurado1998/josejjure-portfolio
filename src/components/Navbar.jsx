@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import cv from '../assets/CV_JoseJurado.pdf';
+import cv from '../assets/CV_JoseAJurado.pdf';
 
 export const CustomNavbar = () => {
 
