@@ -25,7 +25,7 @@ const Projects = () => {
                 <header class="w-full container mx-auto">
                     <div class="flex flex-col items-center pb-4">
 
-                        <Link to="/projects" class="font-bold text-sky-300 uppercase text-5xl hover:text-sky-500">
+                        <Link to="/projects" class="text-center font-bold text-sky-300 uppercase text-5xl hover:text-sky-500">
                             Mis Proyectos
                         </Link>
                         <p class="text-lg text-gray-400">

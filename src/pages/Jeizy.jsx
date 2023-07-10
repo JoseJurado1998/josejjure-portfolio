@@ -45,7 +45,7 @@ const Jeizy = () => {
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-                <div className="pr-12">
+                <div className="sm:pr-12">
                   <h1 className="text-white font-semibold text-5xl">
                     Jeizzy e-commerce
                   </h1>
@@ -269,7 +269,7 @@ const Jeizy = () => {
                 />
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
-                <div className="md:pr-12">
+                <div className="md:pr-12 mt-10 sm:mt-0">
                   {/* <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
                     <i className="fas fa-rocket text-xl"></i>
                   </div> */}
@@ -325,9 +325,9 @@ const Jeizy = () => {
           </div>
         </section>
 
-        <section className="pt-16 pb-48">
+        <section className="sm:pt-16 sm:pb-48">
           <div className="container mx-auto px-4">
-            <div className="flex flex-wrap justify-center text-center mb-24">
+            <div className="flex flex-wrap justify-center text-center mb-14 sm:mb-24">
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-4xl font-semibold">
                   4 Funcionalidades Principales
@@ -529,13 +529,13 @@ const Jeizy = () => {
             </div>
           </div>
 
-          <div className='mx-auto flex flex-row justify-center px-10 gap-4'>
+          <div className='mx-auto flex flex-col md:flex-row justify-center px-10 gap-4'>
             <div className="px-4">
               <img src={imagen2} className="text-xl h-72 mt-5 font-semibold text-white">
               </img>
             </div>
             <div className="px-4">
-              <img src={imagen3} className="text-xl mt-5 h-72 font-semibold text-white">
+              <img src={imagen3} className="mx-auto text-xl mt-5 h-72 font-semibold text-white">
               </img>
             </div>
             <div className="px-4">
