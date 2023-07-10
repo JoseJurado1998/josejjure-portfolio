@@ -9,7 +9,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export const Contact = () => {
   return (
-    <section className='max-w-4xl border-2 border-gray-200 mx-auto flex justify-center flex-col text-center my-14 py-10'>
+    <section className='max-w-4xl border-2 border-gray-200  flex justify-center flex-col text-center my-14 py-10 mx-4 sm:mx-auto'>
       <h2 id='contact' className='text-3xl font-bold'>¡Contáctame!</h2>
       <p className='mt-10'>jose.jurado.repullo@gmail.com</p>
       <div className='mt-4 flex flex-row justify-center gap-6 text-4xl'>

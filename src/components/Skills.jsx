@@ -27,10 +27,10 @@ const SkillCard = ({ index, title, icon }) => {
 
 const Skills = () => {
     return (
-        <div className="my-8 max-w-6xl mx-auto text-start px-4">
+        <div className="my-8 max-w-6xl mx-auto text-start px-0.5 sm:px-4">
             <motion.div variants={textVariant()} className='text-center sm:text-start'>
-                <p className='sm:text-[18px] text-[16px] text-gray-200 uppercase tracking-wider font-semibold font-poppins'>Acerca de</p>
-                <h2 id='skills' className='text-eerieBlack font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins'>Habilidades</h2>
+                <p id='skills' className='sm:text-[18px] text-[16px] text-gray-200 uppercase tracking-wider font-semibold font-poppins'>Acerca de</p>
+                <h2 className='text-eerieBlack font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins'>Habilidades</h2>
             </motion.div>
 
             <motion.div
@@ -57,7 +57,7 @@ const Skills = () => {
                 <h2 className='mt-12 font-bold md:text-[40px] sm:text-[28px] xs:text-[40px] text-[15px] font-poppins'>Otros conocimientos</h2>
             </motion.div>
 
-            <div className="mt-10 flex flex-row flex-wrap justify-center gap-3">
+            <div className="mt-10 flex flex-row flex-wrap justify-center gap-2">
                 {skills2.map((skill, index) => (
                     <SkillCard key={skill.title} index={index} {...skill} />
                 ))}

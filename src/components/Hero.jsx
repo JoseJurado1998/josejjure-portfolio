@@ -6,9 +6,9 @@ import { motion } from 'framer-motion';
 export const Hero = () => {
   return (
     <div className='flex background-c h-screen w-full'>
-        <div className='my-auto pl-2 sm:pl-14'>
+        <div className='my-auto pl-8 sm:pl-20'>
           <h1
-            className='text-[20px] sm:text-[40px] font-poppins uppercase 
+            className='text-[30px] sm:text-[40px] font-poppins uppercase 
              colorHeader'>
             ¡Hola! soy
             <span
@@ -18,7 +18,7 @@ export const Hero = () => {
               Jose
             </span>
           </h1>
-          <div className='ml-2 sm:ml-10 text-gray-100'>
+          <div className='text-sm sm:text-lg text-gray-100'>
             <p className='flex flex-row gap-4 items-center mt-2 text-md'>
               <FontAwesomeIcon icon="fa-solid fa-computer" />
               Desarrollador Web Full Stack
